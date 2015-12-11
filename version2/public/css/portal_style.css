@@ -237,12 +237,14 @@ table {
 
 #editEmpForm,
 #newEmpForm,
-#timeWrapper {
+#timeWrapper,  
+#newInvoiceForm {
     width: 80%;
     background: #efefef;
     border: 2px solid #ed008c;
-    margin: 0 auto;
+    margin: 30px auto 0 auto;
     padding: 40px;
+    color: #555;
 }
 
 #timeWrapper {
@@ -254,7 +256,8 @@ table {
 }
 
 #editEmpForm .label,
-#newEmpForm .label {
+#newEmpForm .label,
+#newInvoiceForm .label {
     text-align: right;
     color: #444;
     display: flex;
@@ -265,14 +268,17 @@ table {
 }
 
 #editEmpForm .label p,
-#newEmpForm .label p {
+#newEmpForm .label p,
+#newInvoiceForm .label p {
     margin: 0;
 }
 
 #editEmpForm input,
 #editEmpForm select,
 #newEmpForm input, 
-#newEmpForm select {
+#newEmpForm select
+#newInvoiceForm input, 
+#newInvoiceForm select {
     padding: 7px 15px;
     width: 70%;
     margin-bottom: 20px;
@@ -281,14 +287,17 @@ table {
 #editEmpForm input:focus,
 #editEmpForm select:focus,
 #newEmpForm input:focus,
-#newEmpForm select:focus {
+#newEmpForm select:focus
+#newInvoiceForm input:focus,
+#newInvoiceForm select:focus {
     outline-color: #fef200;
     outline-style: solid;
     outline-width: thin;
 }
 
-#editEmpForm select
-#newEmpForm select {
+#editEmpForm select,
+#newEmpForm select,
+#newInvoiceForm select {
     text-indent: 15px;
     margin: 10px 0;
 }
@@ -306,6 +315,7 @@ table {
     font-weight: 700;
     font-size: 170%;
     margin-top: 0;
+    color: #222;
 }
 
 .timeInput {
@@ -317,7 +327,7 @@ table {
     border-radius: 15px;
     outline: none;
     border: 1px solid black;
-    color: #3dc961;
+    color: #555;
 }
 
 .day input[type=number]::-webkit-inner-spin-button, 
