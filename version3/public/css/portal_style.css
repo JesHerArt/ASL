@@ -1,0 +1,425 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    position: relative;
+    background: #1e222b;
+}
+
+.ylw {
+    background: #fef87e;
+}
+
+.mag {
+    background: #f47fc5;
+}
+
+.cyn {
+    background: #80d6f7;
+}
+
+.blk {
+    background: #918f90;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 75px;
+    background: white;
+    z-index: 300;
+}
+
+#container {
+    margin-left: 75px;
+    position: relative;
+    padding: 50px;
+}
+
+#copyright {
+    color: #6d6d6d;
+    font-weight: 300;
+    font-size: 60%;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+
+#employee {
+    color: #80d6f7;
+    background: white;
+    position: fixed;
+    top: -27px;
+    right: 110px;
+    text-align: center;
+    padding: 30px 25px 5px 25px;
+    font-style: italic;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    box-shadow: 0 0 2px #1e222b;
+    z-index: 1000;
+}
+
+#dciIcon {
+    width: 85%;
+    margin: 0 auto;
+    padding: 8px 5px;
+    border-bottom: 1px solid #bfbfbf;
+}
+
+#navContent {
+    height: 100%;
+}
+
+#menu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 86%;
+}
+
+.menuBtn {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 150%;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #00adef;
+    cursor: pointer;
+    color: #918f90;
+}
+
+.menuBtn span {
+    padding: 0;
+    margin: 0;
+}
+
+.menuBtn a {
+    color: #918f90;
+}
+
+img {
+    max-width: 100%;
+}
+
+.tooltipColor + .tooltip > .tooltip-inner {
+    background-color: #fef87e;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: black;
+}
+
+.tooltip {
+    z-index: 1000;
+}
+
+.menuBtn:hover,
+.menuBtn a:hover {
+    color: #f47fc5;
+}
+
+#employee a, #employee a:hover  {
+    color: #00adef;
+}
+
+.decorativeBar {
+    margin: 0;
+    width: 100%;
+}
+
+.bar {
+    padding-top: 3px;
+}
+
+h2 {
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #fef200;
+    margin: 0 0 40px 0;
+}
+
+#settingsBox {
+    background: white;
+    padding: 50px;
+}
+
+#menu a {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+table td,
+table th {
+    padding: 10px 20px;
+}
+
+#personalInfo th {
+    border-right: 1px solid #666;
+    text-align: right;
+    padding-left: 40px;
+}
+
+#empTable th,
+#invoicesTable th,
+#customersTable th,
+#timesheetTable th {
+    border-bottom: 1px solid #666;
+    background: #444;
+    color: white;
+    border-right: 1px solid #999;
+}
+
+#empTable th:nth-last-child, 
+#invoicesTable th:nth-last-child,
+#customersTable th:nth-last-child,
+#timesheetTable th:nth-last-child {
+    border-right: 1ps solid #666;
+}
+
+table td {
+    padding-right: 40px;
+}
+
+table tr:nth-child(2n+1) {
+    background: #efefef;
+}
+
+table {
+    border: 1px solid #666;
+}
+
+#timesheetTable td, #rate, #payroll {
+    font-size: 140%;
+}
+
+h4#empName {
+    font-size: 180%;
+    color: #ed008c;
+    font-weight: 300;
+}
+
+#settingsBox h3 {
+    font-weight: 700;
+    color: #00adef;
+    margin-top: 0;
+}
+
+#empType {
+    color: #ed008c;
+}
+
+.portalBtn {
+    border-radius: 5px;
+    border: 1px solid #fef200;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+    background: #00adef;
+    padding: 7px 15px;
+}
+
+.portalBtn:focus {
+    outline: none;
+}
+
+#addEmpBtn {
+    margin-bottom: 30px;
+}
+
+.empTime {
+    color: #ed008c;
+}
+
+.editEmp {
+    color: #00adef;
+}
+
+.delEmp {
+    color: #d40406;
+}
+
+.empsName {
+    font-weight: bold;
+}
+
+#empTable, #invoicesTable,
+#customersTable, #timesheetTable{
+    width: 100%;
+}
+
+#editEmpForm,
+#newEmpForm,
+#timeWrapper,  
+#newInvoiceForm {
+    width: 80%;
+    background: #efefef;
+    border: 2px solid #ed008c;
+    margin: 30px auto 0 auto;
+    padding: 40px;
+    color: #555;
+}
+
+#timeWrapper {
+    width: 95%;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto;
+}
+
+#editEmpForm .label,
+#newEmpForm .label,
+#newInvoiceForm .label {
+    text-align: right;
+    color: #444;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 110%;
+    height: 37px;
+}
+
+#editEmpForm .label p,
+#newEmpForm .label p,
+#newInvoiceForm .label p {
+    margin: 0;
+}
+
+#editEmpForm input,
+#editEmpForm select,
+#newEmpForm input, 
+#newEmpForm select,
+#newInvoiceForm input, 
+#newInvoiceForm select,
+#newInvoiceForm textarea {
+    padding: 7px 15px;
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+#newInvoiceForm textarea {
+    height: 100px;
+}
+
+#editEmpForm input:focus,
+#editEmpForm select:focus,
+#newEmpForm input:focus,
+#newEmpForm select:focus,
+#newInvoiceForm input:focus,
+#newInvoiceForm select:focus,
+#newInvoiceForm textarea:focus {
+    outline-color: #fef200;
+    outline-style: solid;
+    outline-width: thin;
+}
+
+#editEmpForm select,
+#newEmpForm select,
+#newInvoiceForm select {
+    text-indent: 15px;
+    margin: 10px 0;
+}
+
+.formBtn {
+    width: 30% !important;
+    margin: 50px 9% 0 9.5% !important;
+}
+
+.day {
+    text-align: center;
+}
+
+.day h4 {
+    font-weight: 700;
+    font-size: 170%;
+    margin-top: 0;
+    color: #222;
+}
+
+.timeInput {
+    padding: 10px;
+    width: 100px;
+    height: 70px;
+    text-align: center;
+    font-size: 200%;
+    border-radius: 15px;
+    outline: none;
+    border: 1px solid black;
+    color: #555;
+}
+
+.day input[type=number]::-webkit-inner-spin-button, 
+.day input[type=number]::-webkit-outer-spin-button,
+.itemsSection input[type=number]::-webkit-inner-spin-button, 
+.itemsSection input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+.day ::-webkit-input-placeholder {
+    font-style: italic;
+}
+.day :-moz-placeholder { /* older Firefox*/
+    font-style: italic;
+}
+.day ::-moz-placeholder { /* Firefox 19+ */ 
+    font-style: italic;
+} 
+.day :-ms-input-placeholder { 
+    font-style: italic;
+}
+
+#totalHeading {
+    font-weight: 300;
+    font-size: 250%;
+    margin: 0;
+}
+
+.rightSide {
+    text-align: right;
+}
+
+#timeResults {
+    width: 95%;
+    margin: 0 auto;
+}
+
+#wkTotal {
+    color: #00adef;
+}
+
+.formDiv {
+    border: 1px solid #fff;
+}
+
+.formHeading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.itemBlock {
+    margin-bottom: 20px;
+    border-bottom: 1px dashed #00adef;
+    padding-bottom: 20px
+}
+
+#newItemBtn {
+    text-align: center;
+}
+
+#addNewItem:focus {
+    outline: none;
+}
+
+#afterCalculate {
+    display: none;
+}
